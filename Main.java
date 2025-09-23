@@ -16,12 +16,12 @@ public class Main
   circ3.setRadius(20.5);
 
   System.out.println(circ1.toString());
-   System.out.println(circ2.toString());
-    System.out.println(circ3.toString());
+  System.out.println(circ2.toString());
+  System.out.println(circ3.toString());
 
     double lenWid;
     double len;
-     double Wid;
+    double Wid;
     System.out.println("Type a number for length and width: ");
     lenWid = sc.nextDouble();
     System.out.println("Type a number for length: ");
@@ -29,11 +29,42 @@ public class Main
     System.out.println("Type a number for width: ");
     Wid = sc.nextDouble();
 
+    Rectangle Rect1 = new Rectangle();
+    Rectangle Rect2 = new Rectangle();
+
+    Rect1.setLength(lenWid);
+    Rect1.setWidth(lenWid);
+    Rect2.setLength(len);
+    Rect2.setWidth(Wid);
+
+    System.out.println(Rect1.toString());
+    System.out.println(Rect2.toString());
+
+    double slength;
+    int numsides;
+    double slength2;
+    int numsides2;
 
 
+  System.out.println("Type a side length: ");
+    slength = sc.nextDouble();
+  System.out.println("Type a number of sides: ");
+    numsides = sc.nextInt();
+  System.out.println("Type a side length 2: ");
+   slength2 = sc.nextDouble();
+  System.out.println("Type a number of sides 2: ");
+    numsides2 = sc.nextInt();
 
+  RegularPolygon poly1 = new RegularPolygon();
+  RegularPolygon poly2 = new RegularPolygon();
+
+  poly1.setSideLength(slength);
+  poly1.setNumSides(numsides);
+  poly2.setSideLength(slength2);
+  poly2.setNumSides(numsides2);
+
+  System.out.println(poly1.toString());
+  System.out.println(poly2.toString());
   
-
-
   }
 }
